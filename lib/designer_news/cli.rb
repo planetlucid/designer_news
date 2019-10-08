@@ -3,7 +3,7 @@
 class DesignerNews::CLI
   
   def call
-    puts "Today's Designer News"
+    puts "Today's Designer News:"
   end
   
 end
