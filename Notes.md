@@ -24,6 +24,6 @@ Which article do you want to learn more about.
 
 git add .
 git commit -m "initial commit"
-#git remote add origin git@github.com:planetlucid/designer_news.git
+#git remote add origin git@github.com:planetlucid/designer_news.git(only needed during set-up)
 git push -u origin master
 
