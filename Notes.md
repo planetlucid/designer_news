@@ -13,10 +13,9 @@ How to build a CLI GEM
 
 • User types: designer-news
 • Show: list of news articles
-
-Articles:
-1. first item title
-2. second item title
+• Articles:
+- 1. first item title
+- 2. second item title
 
 Which article do you want to learn more about.
 

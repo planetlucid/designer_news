@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "Hello World"
+require '.lib/designer_news'
+
+DesignerNews::CLI.new.call
