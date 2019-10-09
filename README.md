@@ -2,7 +2,9 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/designer_news`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+TODO: This app is intended to open two articles from DesignerNews.co. To use this, choose one of the two articles and paste the URL into your browser.
+
+#Delete this and the text above, and describe your gem
 
 ## Installation
 

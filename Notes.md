@@ -16,6 +16,7 @@ How to build a CLI GEM
 • Articles:
 - 1. first item title
 - 2. second item title
+- 3. the app returns the item link
 
 Which article do you want to learn more about.
 
