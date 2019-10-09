@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require '.lib/designer_news'
+require './lib/designer_news'
 
 DesignerNews::CLI.new.call
