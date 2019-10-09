@@ -1,4 +1,4 @@
-
+a
 How to build a CLI GEM
 1. Plan your gem, imagine interface
 2. Start with project structure - Google.
@@ -26,3 +26,6 @@ git commit -m "initial commit"
 #git remote add origin git@github.com:planetlucid/designer_news.git(only needed during set-up)
 git push -u origin master
 
+The file to run in BASH:
+
+• ./bin/designer_news
