@@ -12,9 +12,9 @@ class DesignerNews::CLI
     # here doc - http://blog.jayfields.com/2006/12/ruby-multiline-strings-here-doc-or.html
     puts "Today's Designer News:"
     puts <<-DOC
-    1. first item title
-    2. second item title
-  DOC
+      1. first item title
+      2. second item title
+    DOC
   end
   
   def menu
@@ -29,6 +29,8 @@ class DesignerNews::CLI
         puts "Read Article 2..."
       when "list" 
         list_items
+      else
+        puts "No Bueno. Type 1, 2, list, or exit"
       end
     end
   end

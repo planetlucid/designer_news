@@ -30,3 +30,11 @@ git push -u origin master
 The file to run in BASH:
 
 • ./bin/designer_news
+
+What is an item?
+
+An item is an article with a:
+• name
+• author
+• date
+• URL
