@@ -18,15 +18,17 @@ class DesignerNews::CLI
   end
   
   def menu
-    puts "Enter the number of the item you'd like to read or type exit:"
     input = nil 
     while input !="exit"
+      puts "Enter the number of the item you'd like to read, type list to see the list, or type exit:"
       input = gets.strip.downcase
       case input
       when "1"
         puts "Read Article 1..."
       when "2"
         puts "Read Article 2..."
+      when "list" 
+        list_items
       end
     end
   end
