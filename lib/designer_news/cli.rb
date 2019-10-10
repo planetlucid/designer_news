@@ -12,7 +12,7 @@ class DesignerNews::CLI
     # here doc - http://blog.jayfields.com/2006/12/ruby-multiline-strings-here-doc-or.html
     puts "Today's Designer News:"
 
-     @deals = DesignerNews::Article.today
+     @articles = DesignerNews::Article.today
   end
   
   def menu
