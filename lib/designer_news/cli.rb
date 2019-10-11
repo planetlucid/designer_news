@@ -11,8 +11,7 @@ class DesignerNews::CLI
   def list_items
     # here doc - http://blog.jayfields.com/2006/12/ruby-multiline-strings-here-doc-or.html
     puts "Today's Designer News:"
-
-     @articles = DesignerNews::Article.today
+    @articles = DesignerNews::Article.today
   end
   
   def menu
@@ -27,6 +26,8 @@ class DesignerNews::CLI
         puts "Read Article 2..."
       when "list" 
         list_items
+      when "exit"
+        goodbye
       else
         puts "No Bueno. Type 1, 2, list, or exit"
       end
