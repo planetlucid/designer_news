@@ -12,12 +12,18 @@ class DesignerNews::Article
   def self.scrape_articles  
       articles = []
       articles << self.scrape_dn
+      
+      # Go to Designer News, get article, get properties, show article
+      # Go to UX Design, get article, get properties, show article
+      
       articles
   end
   
   def self.scrape_dn
-    doc = Nokogiri::HTML(open("http://designernews.co"))
-  
+    doc = Nokogiri::HTML(open("https://www.designernews.co/"))
+    title = doc.search("a.montana-item-title").first.text  
+    url = doc.search("a.montana-item-title").first
+  end
 end
 
 
@@ -36,5 +42,4 @@ end
       # [article_1, article_2]
   
      
-      # Go to Designer News, get article, get properties, show article
-      # Go to UX Design, get article, get properties, show article
+
