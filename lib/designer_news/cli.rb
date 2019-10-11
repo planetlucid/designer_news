@@ -12,6 +12,9 @@ class DesignerNews::CLI
     # here doc - http://blog.jayfields.com/2006/12/ruby-multiline-strings-here-doc-or.html
     puts "Today's Designer News:"
     @articles = DesignerNews::Article.today
+    @articles.each.with_index(1) do |article, i|
+      puts "#{i}. #{article.title} - #{article.name} - #{article.date} - #{article.url}"
+    end
   end
   
   def menu
@@ -19,15 +22,12 @@ class DesignerNews::CLI
     while input !="exit"
       puts "Enter the number of the item you'd like to read, type list to see the list, or type exit:"
       input = gets.strip.downcase
-      case input
-      when "1"
-        puts "Read Article 1..."
-      when "2"
-        puts "Read Article 2..."
-      when "list" 
+      
+      if input.to_i > 0 
+        the_article = @articles[inupt.to_i-1]
+        puts "#{article.title} - #{article.name} - #{article.date} - #{article.url}"
+      elsif input == "list"
         list_items
-      when "exit"
-        goodbye
       else
         puts "No Bueno. Type 1, 2, list, or exit"
       end
