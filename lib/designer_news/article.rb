@@ -11,6 +11,12 @@ class DesignerNews::Article
     
   def self.scrape_articles  
 
+      deals
+  end
+end
+
+
+
       # article_1 = self.new 
       # article_1.title = "Article Title 1"
       # article_1.name = "Article Author 1"
@@ -27,7 +33,3 @@ class DesignerNews::Article
       deals = []
       # Go to Designer News, get article, get properties, show article
       # Go to UX Design, get article, get properties, show article
-
-      deals
-  end
-end
