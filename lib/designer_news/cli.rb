@@ -24,8 +24,8 @@ class DesignerNews::CLI
       input = gets.strip.downcase
       
       if input.to_i > 0 
-        the_article = @articles[inupt.to_i-1]
-        puts "#{article.title} - #{article.name} - #{article.date} - #{article.url}"
+        the_article = @articles[input.to_i-1]
+        puts "#{the_article.title} - #{the_article.name} - #{the_article.date} - #{the_article.url}"
       elsif input == "list"
         list_items
       else
