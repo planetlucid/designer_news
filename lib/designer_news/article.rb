@@ -22,20 +22,17 @@ class DesignerNews::Article
   def self.scrape_dn
       doc = Nokogiri::HTML(open("https://www.designernews.co/"))
     
-      title = doc.search("a.montana-item-title").first.text
-      name = doc.search("div.montana-item-meta span a").first.text
-      url = 
+      article = self.new 
+      article.title = doc.search("a.montana-item-title").first.text
+      article.name = doc.search("div.montana-item-meta span a").first.text
+      article.url = doc.search("a.montana-item-title").first.attr("href")
+      article.date = true 
       
-      binding.pry
-      end
+      article
+      
+    end
     
-    
-      def self.scrape_ux
-      doc = Nokogiri::HTML(open("https://uxdesign.cc"))
-      name =
-      url = 
-      end
-end
+  end
 
 
 
