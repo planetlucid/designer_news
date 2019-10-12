@@ -12,7 +12,6 @@ class DesignerNews::Article
       articles << self.scrape_dn
       articles << self.scrape_smash
    
-      
       articles
     end
   
@@ -29,14 +28,14 @@ class DesignerNews::Article
     
     def self.scrape_smash
       doc = Nokogiri::HTML(open("https://www.smashingmagazine.com"))
-      binding.pry
+      
       article = self.new 
-      article.title = doc.search("a.montana-item-title").first.text
-      article.name = doc.search("div.montana-item-meta span a").first.text
-      article.url = doc.search("a.montana-item-title").first.attr("href")
+      article.title = doc.search("h2.featured-article__title").first.text
+      article.name = doc.search("p.featured-article__intro").first.text
+      url = doc.search("h2 a").first.attr("href")
       article.date = true 
       
-   
+      #binding.pry
       article
     end
     
