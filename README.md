@@ -1,10 +1,8 @@
 # DesignerNews
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/designer_news`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is Designer News. Use this gem weekly to see a choice between the top two articles from two of the top design sites:
+Designer News and Smashing Magazine. 
 
-TODO: This app is intended to open two articles from DesignerNews.co. To use this, choose one of the two articles and paste the URL into your browser.
-
-#Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -24,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO: This app is intended to show you two articles. 1 from DesignerNews.co and the other from Smashingmagazine.com.
+To use this, choose one of the two articles and paste the URL into your browser.
+
+Type '1' for the first article, '2' for the second article, 'list' to see both or 'exit' to exit the app.
 
 ## Development
 
@@ -43,3 +44,5 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the DesignerNews project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/'restful-strategy-4685'/designer_news/blob/master/CODE_OF_CONDUCT.md).
+
+<!--Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/designer_news`. To experiment with that code, run `bin/console` for an interactive prompt.-->
