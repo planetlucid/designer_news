@@ -9,6 +9,7 @@ class DesignerNews::Article
     
     def self.scrape_articles  
       articles = []
+      
       articles << self.scrape_dn
       articles << self.scrape_smash
    
@@ -23,6 +24,7 @@ class DesignerNews::Article
       article.name = doc.search("div.montana-item-meta span a").first.text
       article.url = doc.search("a.montana-item-title").first.attr("href")
       article.date = true 
+      
       article
     end
     
@@ -32,7 +34,7 @@ class DesignerNews::Article
       article = self.new 
       article.title = doc.search("h2.featured-article__title").first.text
       article.name = doc.search("p.featured-article__intro").first.text
-      url = doc.search("h2 a").first.attr("href")
+      article.url = doc.search("h2 a").first.attr("href")
       article.date = true 
       
       #binding.pry
@@ -45,5 +47,5 @@ class DesignerNews::Article
 
 
 
-  # Go to Designer News, get article, get properties, show article
-  # Go to Another Design Site, get article, get properties, show article
+  # Go to Designer News, get article, get properties, URL
+  # Go to Another Design Site, get article, get properties, show URL
