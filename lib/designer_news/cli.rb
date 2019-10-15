@@ -28,7 +28,7 @@ class DesignerNews::CLI
         puts "#{the_article.title} - #{the_article.name} - #{the_article.date} - #{the_article.url}"
       elsif input == "list"
         list_items
-      else
+      elsif input != "exit"
         puts "No Bueno. Type 1, 2, list, or exit"
       end
     end
