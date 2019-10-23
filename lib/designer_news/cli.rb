@@ -13,7 +13,7 @@ class DesignerNews::CLI
     puts "Today's Designer News:"
     @articles = DesignerNews::Article.today
     @articles.each.with_index(1) do |article, i|
-      puts "#{i}. #{article.title} - #{article.name} - #{article.date} - #{article.url}"
+      puts "#{i}. #{article.title}"
     end
   end
   

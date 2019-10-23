@@ -29,12 +29,13 @@ class DesignerNews::Article
     end
     
     def self.scrape_smash
+      smash_url = "smashingmagazine.com"
       doc = Nokogiri::HTML(open("https://www.smashingmagazine.com"))
       
       article = self.new 
       article.title = doc.search("h2.featured-article__title").first.text
       article.name = doc.search("p.featured-article__intro").first.text
-      article.url = doc.search("h2 a").first.attr("href")
+      article.url = smash_url + doc.search("h2 a").first.attr("href")
       article.date = true 
       
       #binding.pry
