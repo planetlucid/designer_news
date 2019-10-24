@@ -23,7 +23,7 @@ class DesignerNews::CLI
       puts "Enter the number of the item you'd like to read, type list to see the list, or type exit:"
       input = gets.strip.downcase
       
-      if input.to_i > 0 
+      if input.to_i == 1 || input.to_i ==2  
         the_article = @articles[input.to_i-1]
         puts "#{the_article.title} - #{the_article.name} - #{the_article.date} - #{the_article.url}"
       elsif input == "list"
